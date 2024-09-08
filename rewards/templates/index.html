@@ -19,14 +19,16 @@
           <div class="card-body">
             <h5 class="card-title">{{reward.name}}</h5>
             <p class="card-text">Points: {{reward.points}}</p>
-            <a href="/rewards/new" class="btn btn-primary">Claim Reward</a>
+            <a  onclick="openPopup()" class="btn btn-primary">Claim Reward</a>
           </div>
         </div>
       </div>
      {% endfor %}
   </div>
-  <div class="popup">
-    <p class="popup"> testing testing</p>
+  <div id="popup" class="popup">
+    <button class = "closeBtn">&times;</button>
+    <h3>Reward</h3>
+    <p>Your reward has been claimed</p>
   </div>
 
   <div class ="footer" style="text-align: center; margin-top: 100px" >
@@ -37,4 +39,18 @@
       Address: Auckland
     </p>
   </div>
+
+
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "block";
+      document.getElementById("popupBackground").style.display = "block";
+    }
+    function closePopup() {
+      document.getElementById("popup").style.display = "close";
+      document.getElementById("popupBackground").style.display = "close";
+    }
+
+
+  </script>
 {% endblock %}
