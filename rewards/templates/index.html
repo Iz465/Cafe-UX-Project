@@ -1,0 +1,40 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div style="text-align: center;">
+  <h1>Rewards</h1>
+</div>
+<h5 style="text-align: center; line-height: 50px;">
+  Earn 50 points each time you order from us! 
+</h5>
+<h5 style="text-align: center; line-height: 50px;">
+  Spend points to unlock cool rewards! 
+</h5>
+
+  <div class="row">
+    {% for reward in rewards %}
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="{{reward.image_url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{reward.name}}</h5>
+            <p class="card-text">Points: {{reward.points}}</p>
+            <a href="/rewards/new" class="btn btn-primary">Claim Reward</a>
+          </div>
+        </div>
+      </div>
+     {% endfor %}
+  </div>
+  <div class="popup">
+    <p class="popup"> testing testing</p>
+  </div>
+
+  <div class ="footer" style="text-align: center; margin-top: 100px" >
+    <p style="color: black;">
+      Phone: 1111111
+    </p>
+    <p style="color: black;">
+      Address: Auckland
+    </p>
+  </div>
+{% endblock %}
