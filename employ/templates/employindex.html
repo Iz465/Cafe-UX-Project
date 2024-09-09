@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 style="margin-bottom: 100px; text-align: center;"> Employment </h1>
+
+{% for employee in employeed %}
+<div class = "employeeCard">
+  <div class = "employeeTextCard">
+    <div class ="text">
+      <p>Job: {{employee.name}}</p>
+      <p>Income: ${{employee.income}}</p>
+      <p>Description: {{employee.description}}</p>
+      <div class = "employButton">
+        <button>Apply</button>
+      </div>
+    </div>
+  </div>
+  <img class = "employImage" src="{{employee.image_url}}"></img>
+</div>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,28 @@
+
+   html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+
+
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1d2951;
+    height: 30dvh;
+    color: white;
+   
+  }
+
+  .footer p {
+ 
+    font-size: 10px;
+    line-height: 0px;
+  }
+
+  .footer h5 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
