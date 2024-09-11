@@ -3,7 +3,7 @@
   display: none;
   position: fixed;
   background-color:beige;
-  top: 50%;
+  top: 20%;
   left: 40%;
   padding: 20px;
   border-radius: 10px;
@@ -14,6 +14,12 @@
 .popup p, .popup h3 {
   text-align: center;
 }
+
+.popup label {
+  display: flex;
+}
+
+
 
 .popupBackground {
   display: none;

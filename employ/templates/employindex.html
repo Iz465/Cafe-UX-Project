@@ -7,18 +7,29 @@
 {% for employee in employeed %}
 <div class = "employeeCard">
   <div class = "employeeTextCard">
-    <div class ="text lobster-two-regular">
-      <p>Job: {{employee.name}}</p>
-      <p>Income: ${{employee.income}}</p>
-      <p>Description: {{employee.description}}</p>
+    <div class ="text kanit-thin">
+      <p class="kanit-regular" style="text-align: center; font-size: 28px;">{{employee.name}}</p>
+      <p class="kanit-regular" style="text-align: center;">Income: ${{employee.income}}</p>
+      <p>{{employee.description}}</p>
       <div class = "employButton">
-        <button>Apply</button>
+        <button onclick="openPopup()">Apply</button>
       </div>
     </div>
   </div>
   <img class = "employImage" src="{{employee.image_url}}"></img>
 </div>
 
+
 {% endfor %}
+
+<div class = "popup" id="popup">
+  <button class = "closeBtn" onclick="closePopup()">&times;</button>
+  <h5 style="padding: 20px;">Enter your details to apply</h5>
+  <label>Name:</label> <input/> <br/> <br/>
+  <label>Address:</label> <input/> <br/> <br/>
+  <label>Age:</label> <input/> <br/> <br/>
+  <button>Apply</button>
+</div>
+
 
 {% endblock %}

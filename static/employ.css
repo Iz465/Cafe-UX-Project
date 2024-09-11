@@ -1,6 +1,5 @@
 
 
-
 .employImage {
   height: 50vh;
   width: auto;
@@ -20,7 +19,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 80vh;
-  background-color: green;
+  background-color: beige;
   border-radius: 15px; 
   border-color: rgb(146, 102, 190);
   border-width: 5px;

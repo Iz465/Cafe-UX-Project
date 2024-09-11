@@ -13,7 +13,9 @@
     <link href="{% static 'popup.css'%}" rel="stylesheet">
     <link href="{% static 'footer.css'%}" rel = "stylesheet">
     <link href ="{% static 'employ.css'%}" rel="stylesheet">
-    <link href="{% static 'mainPage.css'%}">
+    <link href="{% static 'fontStyles.css'%}" rel="stylesheet">
+    <link href="{% static 'mainPage.css'%}" rel="stylesheet">
+    <script src="{% static 'scripts/popup.js'%}"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
 
@@ -22,13 +24,15 @@
 
   </head>
   <body>
-  <div class = "background">
-    <nav class="navbar bg-body-tertiary"></nav>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cafe</a>
+
+      <div class = "navigation">
+        <a href="{% url 'home' %}">Cafe</a>
+        <a href="#">Menu</a>
+        <a href="{% url 'rewards' %}">Rewards</a>
+        <a href="{% url 'employ' %}">Employment</a>
       </div>
-    </nav> 
-  </div>
+   
+
    
     {% block content %}
     {% endblock %}
