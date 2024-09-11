@@ -1,8 +1,12 @@
 
+
+   
+   
    html, body {
     height: 100%;
     margin: 0;
   }
+
 
 
 
@@ -20,6 +24,7 @@
  
     font-size: 10px;
     line-height: 0px;
+    
   }
 
   .footer h5 {
