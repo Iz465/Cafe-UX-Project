@@ -19,11 +19,13 @@ from django.urls import path, include
 from django.shortcuts import redirect
 
 def home(request):
-     return redirect('rewards')
+     return redirect('welcome')
 
 urlpatterns = [
     path('', home, name = "home"),
     path('admin/', admin.site.urls, name = "admin"),
     path('rewards/', include('rewards.urls')),
-    path('employ/', include('employ.urls'))
+    path('employ/', include('employ.urls')),
+    path('menu/', include('menu.urls')),
+    path('welcome/', include('welcome.urls'))
 ]

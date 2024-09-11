@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rewards.apps.RewardsConfig',
-    'employ.apps.EmployConfig'
+    'employ.apps.EmployConfig',
+    'menu.apps.MenuConfig',
+    'welcome.apps.WelcomeConfig'
 ]
 
 MIDDLEWARE = [
