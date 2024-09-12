@@ -3,6 +3,7 @@
 {% block content %}
 <body>
   
+ 
   <div class="Menu">
       <div class="menucontroler">
           <ul>
@@ -20,6 +21,20 @@
       </ul>
 
   </div>
+
+  {% for items in menu %}
+  <div class = "employeeCard">
+    <div class = "employeeTextCard">
+      <div>
+        <a href="{% url 'rewards' %}"><p class="kanit-regular" style="text-align: center; font-size: 28px;">{{items.name}}</p></a>
+        <p>{{items.description}}</p>
+    
+      </div>
+    </div>
+    <img class = "employImage" src="{{items.image_url}}">image</img>
+  </div>
+
+  {% endfor %}
 
   
 </body>
