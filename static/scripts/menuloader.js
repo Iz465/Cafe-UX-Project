@@ -1,4 +1,16 @@
 
+function runPyScript(){
+    jqXHR = $.ajax({
+
+        type: "POST",
+        url: "menu/views.py"
+    }).done(function(){
+        console.log("CHECK")
+    })
+
+    return jqXHR.responseText;
+}
+
 class Item{
     constructor(obj){
         this.name = obj.name;
@@ -79,24 +91,15 @@ function sortNum(list){
     sortedlist = list.sort(function(a,b){return a.price - b.price})
     return sortedlist;
 }
-function getJsonData(){
-    fetch('./static/data/data.json')
-        .then((respond) => {
-            if (!respond.ok){
-                throw new Error('HTTP error! Status: ${respond.status}');
-            }
-            return respond.json();
-        }).then((obj) => {
-            itemlist = new Array();
-            for(let i = 0; i < obj.item.length; ++i){
-                itemlist.push(new Item(obj.item[i]));
-            }
-            console.log("Menuitems count: " + itemlist.length)
-            build(itemlist)
-            
-        }).catch(function (error) { 
-            console.error("Unable to fetch data", error);
-        })
+function getData(){
+    response= runPyScript();
+    console.log(response);
+    // itemlist = new Array();
+    // for(let i = 0; i < obj.item.length; ++i){
+    //     itemlist.push(new Item(obj.item[i]));
+    // }
+    // console.log("Menuitems count: " + itemlist.length)
+    // build(itemlist)
 }
 
 
@@ -147,3 +150,6 @@ function construct_item(obj){
 }
 /////
 // Need to add sorting by: name, price
+
+
+// do something with the response
