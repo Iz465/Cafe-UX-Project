@@ -1,10 +1,30 @@
 
 {% extends 'base.html' %}
 {% block content %}
+<body>
+  
+  <div class="Menu">
+      <div class="menucontroler">
+          <ul>
+              <label for="name">Sort by: </label>
+              <select id="combobox" onchange="combochange()">
+                  <option id="op1" value="name">name (A - Z)</option>
+                  <option id="op2" value="price">price (low - high)</option>
+              </select>
+              <label for="search">Search</label>
+              <input type="text" id="search" name="search" onchange="search()">
+          </ul>
+      </div>
+      <ul id="data">
+          
+      </ul>
 
-<h1>
-  Cafe Menu
-</h1>
+  </div>
 
+  
+</body>
+<script>
+  getJsonData();
+</script>
 {% endblock %}
 
