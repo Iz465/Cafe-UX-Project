@@ -1,6 +1,14 @@
 
 from django.shortcuts import render
-
+from .models import Welcome
 
 def index(request):
-  return render(request, 'welcome-index.html')
+  welcome = Welcome.objects.all()
+  return render(request, 'welcome-index.html', {'welcomes': welcome})
+
+
+
+
+
+
+

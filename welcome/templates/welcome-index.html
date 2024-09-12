@@ -1,9 +1,24 @@
 
 {% extends 'base.html' %}
 {% block content %}
-<h1>
-  Welcome to the cafe
-</h1>
+
+<h1 style="margin-bottom: 100px; text-align: center;"> Cafe </h1>
+
+{% for welcome in welcomes %}
+<div class = "employeeCard">
+  <div class = "employeeTextCard">
+    <div>
+      <a href="{% url 'rewards' %}"><p class="kanit-regular" style="text-align: center; font-size: 28px;">{{welcome.name}}</p></a>
+      <p>{{welcome.description}}</p>
+  
+    </div>
+  </div>
+  <img class = "employImage" src="{{welcome.image_url}}"></img>
+</div>
+
+
+{% endfor %}
+
 
 
 

@@ -1,0 +1,28 @@
+
+.reward-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+.reward-items {
+    text-align: center;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.reward-image {
+    max-height: 30dvh;
+    width: auto;
+}
+
+.reward-items button {
+    background-color:darkgoldenrod;
+    border: none;
+    border-radius: 10px;
+}

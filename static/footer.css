@@ -1,14 +1,5 @@
 
 
-   
-   
-   html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-
-
 
   
   .footer {
@@ -22,8 +13,8 @@
 
   .footer p {
  
-    font-size: 10px;
-    line-height: 0px;
+    font-size: 15px;
+    line-height: 20px;
     
   }
 
