@@ -1,9 +1,8 @@
 from django.urls import path
-from .views import index, listMenuPage
+from .views import index
 
 
 urlpatterns = [
-  path('', index, name = "menu"),
-  path("listmenu",listMenuPage,name="MenuItems")
+  path('', index, name = "menu")
  
 ]

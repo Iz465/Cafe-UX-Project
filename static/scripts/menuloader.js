@@ -1,12 +1,17 @@
 
-function runPyScript(){
-    jqXHR = $.ajax({
-
+function runPyScript(input){
+    console.log(input)
+    var jqXHR = $.ajax({
         type: "POST",
-        url: "menu/views.py"
+        url: "Cafe-UX-Project/menu/views.py",
+        data: { param: input }
     }).done(function(){
         console.log("CHECK")
+    }).fail(function(){
+        console.log("FAIL")
     })
+
+    
 
     return jqXHR.responseText;
 }
@@ -92,7 +97,7 @@ function sortNum(list){
     return sortedlist;
 }
 function getData(){
-    response= runPyScript();
+    response= runPyScript("listMenuPage");
     console.log(response);
     // itemlist = new Array();
     // for(let i = 0; i < obj.item.length; ++i){
