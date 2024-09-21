@@ -5,19 +5,19 @@
   <h1>Rewards</h1>
 </div>
 <h5 style="text-align: center; line-height: 50px;">
-  Earn 50 points each time you order from us! 
+  Earn 50 points each Time you Order 
 </h5>
 <h5 style="text-align: center; line-height: 50px;">
-  Spend points to unlock cool rewards! 
+  Spend Points to Unlock Rewards 
 </h5>
 
 <div class = "reward-container">
     {% for reward in rewards %}
      <div class = "reward-items">
       <img class="reward-image" src="{{reward.image_url}}">
-        <h5>{{reward.name}}</h5>
-        <p>Points: {{reward.points}}</p>
-        <button onclick="openPopup(this)" data-reward-name ="{{reward.name}}">Claim Reward</button>
+        <h6 class="inconsolata">{{reward.name}}</h6> 
+              <p class="inconsolata">Points: {{reward.points}}</p>
+      <!-- <button onclick="openPopup(this)" data-reward-name ="{{reward.name}}">Claim Reward</button>  -->
      </div>
     
      {% endfor %}
