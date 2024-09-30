@@ -1,0 +1,25 @@
+
+
+
+.carousel-container {
+  height: 60vh;
+ 
+}
+
+.carousel-container img {
+  height: 60vh;
+   position: absolute; 
+  left: 50%;
+  top: -5%;
+  transform: translate(-50%, 50%); 
+  z-index: -5;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+}
+
+.carousel-container img.showing {
+  opacity: 1;
+  z-index: 5;
+}
+

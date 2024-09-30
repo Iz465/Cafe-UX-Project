@@ -1,26 +1,16 @@
 
 {% extends 'base.html' %}
 {% block content %}
-
-<h1 style="margin-bottom: 100px; text-align: center;"> Cafe </h1>
-
-{% for welcome in welcomes %}
-
-<div class = "employeeCard">
-  <div class = "employeeTextCard">
-    <div>
-      <a href="{% url 'rewards' %}"><p class="kanit-regular" style="text-align: center; font-size: 28px;">{{welcome.name}}</p></a>
-      <p>{{welcome.description}}</p>
+{% load static %}
+<h1 style="text-align: center; padding: 10px;">Cafe</h1>
+<div class="carousel-container">
+  <img class = "showing carousel-images" src = "{% static 'images/bananabread.avif' %}">
+  <img class = "carousel-images" src = "{% static 'images/test-coffee-image.jpg' %}">
+  <img class = "carousel-images" src = "{% static 'images/cake-and-pastries.jpg' %}">
   
-    </div>
-  </div>
-  <img class = "employImage" src="{{welcome.image_url}}"></img>
 </div>
 
-
-{% endfor %}
-
-
-
-
+<script src="{% static 'scripts/carousel.js'%}"></script>
+   
 {% endblock %}
+

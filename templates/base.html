@@ -18,11 +18,14 @@
     <link href="{% static 'menu.css'%}" rel="stylesheet">
     <link href="{% static 'reward-page.css' %}" rel="stylesheet">
     <link href="{% static 'welcome-page.css' %}" rel="stylesheet">
+    <link href=" {% static 'carousel.css'%}" rel="stylesheet">
     <script src="{% static 'scripts/popup.js'%}"></script> 
     <script src="{% static 'scripts/menuloader.js'%}"></script> 
     <script src="{% static 'scripts/jquery.js'%}"></script> 
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="{% static 'data/data.json'%}" rel="json">
+
     
 
 
@@ -31,6 +34,8 @@
   </head>
   <body>
 
+
+<div class="page-container">
       <div class = "navigation">
         <a href="{% url 'home' %}">Cafe</a>
         <a href="{% url 'menu' %}">Menu</a>
@@ -39,10 +44,15 @@
       </div>
    
 
+  
+
    
     {% block content %}
     {% endblock %}
-    <div class ="footer inconsolata" style="text-align: center; margin-top: 100px">
+    <div style="height: 300px;">
+    </div>
+    <div style="height: 10vh;">
+    <div class ="footer">
       <div>
         <h5>Information</h5>
         <p>Phone:1111111</p>
@@ -62,7 +72,9 @@
       <img src = "{% static 'images/facebook.svg'%}">
       <img src = "{% static 'images/twitter.svg'%}">
       <img src = "{% static 'images/youtube.svg'%}">
-      </div>
     </div>
+    </div>
+  </div>
+
   </body>
 </html>

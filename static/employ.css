@@ -6,12 +6,8 @@
 }
 
 .employeeCard {
-
-  margin-bottom: 100px;
   display: flex;
-  justify-content: space-around;
-  
-  
+  justify-content: space-around;  
 }
 
 .employeeTextCard {

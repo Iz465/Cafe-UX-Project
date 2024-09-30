@@ -41,21 +41,7 @@ max-height: 30dvh;
     
 }
 
-.reward-carousel {
-    background-color: rgba(63, 112, 77,1);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 
-}
-
-.reward-carousel img {
-    width: 65%; 
-    height: auto; 
-   
-}
 
 
 
