@@ -2,12 +2,11 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-<h1 style="text-align: center; padding: 10px;">Cafe</h1>
+
 <div class="carousel-container">
   <img class = "showing carousel-images" src = "{% static 'images/bananabread.avif' %}">
   <img class = "carousel-images" src = "{% static 'images/test-coffee-image.jpg' %}">
   <img class = "carousel-images" src = "{% static 'images/cake-and-pastries.jpg' %}">
-  
 </div>
 
 <script src="{% static 'scripts/carousel.js'%}"></script>
