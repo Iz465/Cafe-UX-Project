@@ -14,6 +14,7 @@
     margin: 20px;
     border-color: rgba(184,216,190,1);
     border-style: solid;
+    cursor: pointer;
 }
 
 .reward-items h6 {
@@ -21,8 +22,8 @@
 }
 
 .reward-items p {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Ensure no padding is added */
+    margin: 0; 
+    padding: 0; 
 }
 
 
@@ -31,8 +32,45 @@ max-height: 30dvh;
 }
 
 
-.reward-items button {
-    background-color:darkgoldenrod;
-    border: none;
-    border-radius: 10px;
+.reward-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40dvh;
+    text-align: center;
+    
+}
+
+.reward-carousel {
+    background-color: rgba(63, 112, 77,1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.reward-carousel img {
+    width: 65%; 
+    height: auto; 
+   
+}
+
+
+
+.reward-description {
+    background-color: rgba(184,216,190,1);
+    width: 100%;
+    display: flex;
+}
+
+.reward-description-2 {
+    align-self: center;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
 }

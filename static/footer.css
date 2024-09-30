@@ -5,9 +5,10 @@
   .footer {
     display: flex;
     justify-content: space-around;
-    background-color: #1d2951;
-    height: 30dvh;
-    color: white;
+   background-color: rgba(184,216,190,.35);
+    height: 40dvh;
+    padding: 20px;
+
    
   }
 
