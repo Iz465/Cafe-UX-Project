@@ -8,6 +8,11 @@ html, body {
  
 }
 
+p {
+  margin: 0;
+}
+
+
 .page-container {
   position: relative;
   min-height: 100%;
@@ -31,5 +36,8 @@ html, body {
 .navigation, a {
   color: black;
 }
+
+
+
 
 
