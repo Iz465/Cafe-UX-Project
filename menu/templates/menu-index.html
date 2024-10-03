@@ -17,24 +17,23 @@
           </ul>
       </div>
       <ul id="data">
+        {% for items in menu %}
+        <div class = "item-cont">
+          <img class = "item-image" src="{{items.image_url}}">image</img>
+          <div class = "item-content">
+            <div>
+              <a href="{% url 'rewards' %}"><p class="kanit-regular" style="text-align: center; font-size: 28px;">{{items.name}}</p></a>
+              <p class="item-desc">{{items.description}}</p>
           
+            </div>
+          </div>
+          
+        </div>
+      
+        {% endfor %}
       </ul>
 
   </div>
-
-  {% for items in menu %}
-  <div class = "employeeCard">
-    <div class = "employeeTextCard">
-      <div>
-        <a href="{% url 'rewards' %}"><p class="kanit-regular" style="text-align: center; font-size: 28px;">{{items.name}}</p></a>
-        <p>{{items.description}}</p>
-    
-      </div>
-    </div>
-    <img class = "employImage" src="{{items.image_url}}">image</img>
-  </div>
-
-  {% endfor %}
 
   
 </body>
