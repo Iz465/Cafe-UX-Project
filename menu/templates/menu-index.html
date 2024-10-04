@@ -19,7 +19,7 @@
       <ul id="data">
         {% for items in menu %}
         <div class = "item-cont">
-          <img class = "item-image" src="{{items.image_url}}">image</img>
+          <img title="product-img" class = "item-image" alt="Image-alt" src="{{items.image_url}}"></img>
           <div class = "item-content">
             <div>
               <a href="{% url 'rewards' %}"><p class="kanit-regular" style="text-align: center; font-size: 28px;">{{items.name}}</p></a>

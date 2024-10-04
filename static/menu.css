@@ -17,7 +17,7 @@
     margin: auto;
 }
 .item-image{
-    object-fit:cover;
+    width: 100%;
 }
 .item-cont{
     overflow: hidden;
